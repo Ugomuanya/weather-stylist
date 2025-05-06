@@ -3,6 +3,13 @@
 Welcome to "Weather Stylist AI"
 A full-stack project that integrates weather forecasting with fashion suggestions using AI and real-time data.
 
+Architecture Overview
+The system follows a modular client-server architecture:
+•	The Streamlit client app allows users to log in, input a city name, and receive AI-generated outfit suggestions based on real-time weather.
+•	It communicates with a RESTful API built using FastAPI.
+•	The backend handles user authentication using Supabase, weather data via the OpenWeather API, and fashion recommendations using the Cohere API.
+•	Credit deduction is enforced at the backend, where each AI suggestion call reduces the user’s credit count stored in Supabase.
+
 
 Project Overview
 
